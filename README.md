@@ -84,8 +84,4 @@ Status code distribution:
 - [ ] BackgroundTask
 
 ---
-**Мои контакты и моей команды:**
-- https://vk.com/k0d_python
-- https://www.linkedin.com/in/p141592/
-- https://twitter.com/p141592
-- https://t.me/p141592
+https://t.me/p141592
