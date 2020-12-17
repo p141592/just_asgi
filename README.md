@@ -6,7 +6,7 @@
 
 
 ```
-hey -z 60s "http://0.0.0.0:8000/healthz"
+--- Projects/just_asgi ‹master› » hey -z 60s "http://0.0.0.0:8000/healthz"
 
 Summary:
   Total:	60.0056 secs
