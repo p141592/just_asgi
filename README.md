@@ -2,9 +2,11 @@
 
 Самый маленький полнофункциональный бекенд на асинхронном Python
 
-`make run`
+### Тестирование нагрузки
 
+Тестировал с помощью [hey](https://github.com/rakyll/hey) (HTTP load generator)
 
+P.S. **8508 RPS** - это очень быстро для Python
 ```
 --- Projects/just_asgi ‹master› » hey -z 60s "http://0.0.0.0:8000/healthz"
 
@@ -49,3 +51,12 @@ Details (average, fastest, slowest):
 Status code distribution:
   [200]	510552 responses
 ```
+
+**Запуск локально:**
+1. Установить библиотеки: `poetry install`
+2. В папке src выполнить `python app.py`
+
+**Запуск в PyCharm**
+![](docs/pycharm.png)
+
+**Запуск на стенде:** `make run`
