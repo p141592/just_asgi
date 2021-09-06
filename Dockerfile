@@ -26,4 +26,4 @@ ENV PYTHONPATH /usr/local/lib/python3.8/site-packages:/opt/application/
 
 COPY src /opt/application/
 COPY gunicorn.conf.py /
-CMD gunicorn -c /gunicorn.conf.py -b 0.0.0.0:8000 --log-level debug --access-logfile "-" --error-logfile "-" app:ASGIApplication
+CMD gunicorn -c /gunicorn.conf.py -b 0.0.0.0:8080 --log-level debug --access-logfile "-" --error-logfile "-" app:ASGIApplication

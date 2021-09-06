@@ -1,7 +1,7 @@
 # Registry where you want store your Docker images
-DOCKER_REGISTRY = p141592
-PORTS = 8000:8000
-PROJECT_NAME = just_asgi
+DOCKER_REGISTRY = cr.msk.sbercloud.ru/577618d7-0b37-452d-9a1a-4f0ad7a84d10
+PORTS = 8080:8080
+PROJECT_NAME = deploy-test
 
 REPO_PATH := $(shell git rev-parse --show-toplevel)
 CHANGED_FILES := $(shell git diff-files)
