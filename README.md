@@ -1,12 +1,10 @@
 # just_asgi (8508 RPS)
 
-Самый маленький полнофункциональный бекенд на асинхронном Python
-
 ### Тестирование нагрузки
 
 Тестировал с помощью [hey](https://github.com/rakyll/hey) (HTTP load generator)
 
-P.S. **8508 RPS** - это очень быстро для Python
+P.S. **8508 RPS**
 ```
 --- Projects/just_asgi ‹master› » hey -z 60s "http://0.0.0.0:8000/healthz"
 
@@ -60,28 +58,6 @@ Status code distribution:
 ![](docs/pycharm.png)
 
 **Запуск на стенде:** `make run`
-
-
-### TODO:
-```
-Запускать можно и так, но с этими инструментами будет прям конфетка
-```
-- [ ] Логирование
-- [ ] Сбор метрик для Prometheus
-- [ ] Sentry
-- [ ] Механика для кеширования
-- [ ] Генератор OpenAPI
-- [ ] Подключение OpenTrace
-- [ ] HTTPException с валидным JSON ответом
-- [ ] Сериализация
-- [ ] Middleware
-- [ ] startapp/stopapp
-- [ ] asyncpg pool
-- [ ] Настройки для запуска production
-- [ ] cli для операций без запуска проекта
-- [ ] ipython notebook общения с сервисом 
-- [ ] Клиент для тестирования
-- [ ] BackgroundTask
 
 ---
 https://t.me/p141592
